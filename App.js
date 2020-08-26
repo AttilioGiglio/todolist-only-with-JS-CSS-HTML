@@ -25,7 +25,9 @@ function addTodo(event){
     todoDiv.appendChild(completedButton); 
     // Cross delete button
     const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '<i class="fas fa-check"></i>';
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
     deleteButton.classList.add('todo-button');
-    todoDiv.appendChild(deleteButton); 
+    todoDiv.appendChild(deleteButton);
+    // Append to List
+    todoList.appendChild(todoDiv) 
 }
