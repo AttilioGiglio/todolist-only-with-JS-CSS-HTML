@@ -38,11 +38,12 @@ function addTodo(e){
 
 function deleteCheck(e){
     const item = e.target;
-    // DELETE TODO
+    // Delete Todo
     if(item.classList[0] === 'delete-btn'){
         const todo1 = item.parentElement;
         todo1.remove();
     }
+    // Cross Todo
     if(item.classList[0] === 'complete-btn'){
         const todo2 = item.parentElement;
         todo2.classList.toggle('completed');
