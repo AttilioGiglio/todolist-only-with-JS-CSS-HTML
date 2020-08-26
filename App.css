@@ -103,3 +103,37 @@ form button:hover {
     text-decoration:line-through;
     opacity: 0.5;
 }
+
+select{
+    outline: none;
+    border:none;
+    appearance: none;
+    color: #5465ff;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 2rem;
+    width: 16vw;
+}
+
+.select{
+    margin-left:1rem;
+    margin-right: 0;
+    position: relative;
+    overflow: hidden;
+    font-size: 2rem;
+    background:#f8f9fa;
+    width: 16vw;
+}
+
+.select::after{
+    content:"\25BC";
+    margin-left: 0;
+    position: absolute;
+    background: #5465ff;
+    color: #f8f9fa;
+    top:0;
+    right:0;
+    padding: 1rem;
+    pointer-events: none;
+}
