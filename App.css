@@ -18,18 +18,22 @@ header{
 
 header,
 form{
-    min-height: 20vh;
+    min-height:15vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 form input, form button{
-    padding: 0.5rem;
+    padding: 1rem;
     font-size: 2rem;
     border:none;
     background: #f8f9fa;
     color: #5465ff;
+}
+
+form input{
+    min-width: 30vw;
 }
 
 form button{
@@ -40,6 +44,52 @@ form button{
 }
 
 form button:hover {
+    background: #5465ff;
+    color:#f8f9fa;
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo{
+    margin:1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fa;
+    color: #5465ff;
+    font-size: 1.25rem;
+}
+
+.todo li{
+    flex:1;
+    padding: 1em;
+}
+
+.delete-btn,
+.complete-btn{
+    background:#f8f9fa;
+    color: #5465ff;
+    border:none;
+    padding:1em;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.todo .delete-btn:hover {
+    background: #5465ff;
+    color:#f8f9fa;
+}
+
+.todo .complete-btn:hover {
     background: #5465ff;
     color:#f8f9fa;
 }
